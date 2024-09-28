@@ -1,0 +1,26 @@
+Code Description
+================
+This Python script implements a GUI application using Tkinter that allows users to visualize a Minimax tree with Alpha-Beta pruning. The application enables users to input the depth of the tree and manually enter the leaf node values. It then computes the Minimax values for each node, visualizes the tree, and highlights the optimal path and pruned branches.
+
+Implementation Details:
+-----------------------
+1. GUI Interface: The GUI is built with Tkinter and includes input fields for tree depth and leaf node values. Users can generate the Minimax tree by clicking buttons, and the tree is visualized on a canvas.
+
+2. Minimax Tree Creation: A function is used to generate the Minimax tree recursively based on the user-specified depth. Users are prompted to manually enter values for the leaf nodes, which are used to build the tree structure.
+
+3. Minimax Computation: The Minimax algorithm is applied to compute the value at each node, determining the optimal path for the maximizing player. Alpha-Beta pruning is implemented to skip unnecessary branches, making the computation more efficient.
+
+4. Visualization: The tree is drawn on the canvas with circles representing Max nodes, squares representing Min nodes, and lines connecting them to show the tree structure. The computed Minimax values are displayed at each node, and the optimal path is highlighted. Pruned branches are visually distinguished to show the effect of Alpha-Beta pruning.
+
+Challenges Faced:
+-----------------
+- Understanding the Algorithms: Learning how the Minimax and Alpha-Beta pruning algorithms work was a key part of this project. Implementing these algorithms in code required careful attention to detail.
+- Tree Construction: Building the tree recursively while ensuring correct node assignments and maintaining the structure was challenging, especially when managing user input for leaf values.
+- GUI Design: Creating a user-friendly interface that allows for input, tree visualization, and interaction required thoughtful design and handling Tkinter's event-driven model.
+- Ensuring Simplicity: The code was written to be straightforward and easy to understand, with clear variable names and modular functions that break down the complex processes.
+
+Additional Features:
+--------------------
+- Optimal Path Highlighting: After the Minimax computation, the optimal path is highlighted to visually indicate the best sequence of moves.
+- Error Handling: The application includes error handling to manage invalid inputs and guide the user with appropriate messages.
+- Interactive Node Information: Clicking on nodes in the tree visualization displays their value and type (Max or Min), enhancing user interaction and understanding.
