@@ -12,13 +12,6 @@ Implementation Details:
 
 4. Visualization: The tree is drawn on the canvas with circles representing Max nodes, squares representing Min nodes, and lines connecting them to show the tree structure. The computed Minimax values are displayed at each node, and the optimal path is highlighted. Pruned branches are visually distinguished to show the effect of Alpha-Beta pruning.
 
-Challenges Faced:
------------------
-- Understanding the Algorithms: Learning how the Minimax and Alpha-Beta pruning algorithms work was a key part of this project. Implementing these algorithms in code required careful attention to detail.
-- Tree Construction: Building the tree recursively while ensuring correct node assignments and maintaining the structure was challenging, especially when managing user input for leaf values.
-- GUI Design: Creating a user-friendly interface that allows for input, tree visualization, and interaction required thoughtful design and handling Tkinter's event-driven model.
-- Ensuring Simplicity: The code was written to be straightforward and easy to understand, with clear variable names and modular functions that break down the complex processes.
-
 Additional Features:
 --------------------
 - Optimal Path Highlighting: After the Minimax computation, the optimal path is highlighted to visually indicate the best sequence of moves.
